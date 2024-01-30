@@ -6,7 +6,7 @@
   --header-height: 3rem;
 
   /*========== Colors ==========*/
-  --hue-color: 230;
+  --hue-color: 150;
 
   /* HSL color mode */
   --first-color: hsl(var(--hue-color), 69%, 61%);
@@ -153,18 +153,15 @@ img {
 /*==================== CARDS ====================*/
 .wrapper {
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .card-container {
-  height: 400px;
+  width: 100%;
+  height: 300px;
   display: flex;
-  flex-wrap: nowrap;
-  justify-content: start;
 }
 
+/*===================== CARD CLOSE ====================*/
 .card {
   width: 80px;
   border-radius: 0.75rem;
@@ -180,13 +177,13 @@ img {
 }
 
 .card-row {
-  color: white;
+  background-color: var(--container-color);
   display: flex;
   flex-wrap: nowrap;
 }
 
 .card-icon {
-  background: var(--first-color);
+  background: var(--first-color-alt);
   color: white;
   border-radius: 50%;
   width: 50px;
@@ -210,18 +207,20 @@ img {
 }
 
 .card-description p {
-  color: #b0b0ba;
+  color: var(--title-color);
   padding-top: 5px;
 }
 
 .card-description h4 {
-  color: #fff;
+  color: var(--title-color);
   text-transform: uppercase;
 }
 
 input {
   display: none;
 }
+
+/*===================== CARD OPEN ====================*/
 
 input:checked + label {
   width: 600px;
@@ -233,19 +232,19 @@ input:checked + label .card-description {
 }
 
 .card[for="c1"] {
-  background-image: url("../img/img1.png");
+  background-image: url("../img/pattern-shapes.jpeg");
 }
 
 .card[for="c2"] {
-  background-image: url("../img/img2.jpg");
+  background-image: url("../img/chicken-dance.png");
 }
 
 .card[for="c3"] {
-  background-image: url("../img/img3.jpg");
+  background-image: url("../img/pattern-superhero.png");
 }
 
 .card[for="c4"] {
-  background-image: url("../img/img4.jpg");
+  background-image: url("../img/get-patterns.png");
 }
 
 /*==================== SKILLS ====================*/
