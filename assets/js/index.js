@@ -1,19 +1,19 @@
-/*==================== ACCORDION SKILLS ====================*/
-const skillsContent = document.getElementsByClassName('skills__content'),
-  skillsHeader = document.querySelectorAll('.skills__header');
+/*==================== ACCORDION accordions ====================*/
+const accordionsContent = document.getElementsByClassName('accordions__content'),
+  accordionsHeader = document.querySelectorAll('.accordions__header');
 
-function toggleSkills() {
+function toggleaccordions() {
   let itemClass = this.parentNode.className;
 
-  for (i = 0; i < skillsContent.length; i++) {
-    skillsContent[i].className = 'skills__content skills__close';
+  for (i = 0; i < accordionsContent.length; i++) {
+    accordionsContent[i].className = 'accordions__content accordions__close';
   }
 
-  if (itemClass === 'skills__content skills__close') {
-    this.parentNode.className = 'skills__content skills_open';
+  if (itemClass === 'accordions__content accordions__close') {
+    this.parentNode.className = 'accordions__content accordions__open';
   }
 }
 
-skillsHeader.forEach((el) => {
-  el.addEventListener('click', toggleSkills);
+accordionsHeader.forEach((el) => {
+  el.addEventListener('click', toggleaccordions);
 })

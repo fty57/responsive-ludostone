@@ -150,6 +150,73 @@ img {
   background-color: var(--body-color);
 }
 
+/*==================== accordions ====================*/
+.accordions__container {
+  row-gap: 0rem;
+}
+
+.accordions__header {
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--mb-1-5);
+  cursor: pointer;
+  border-radius: 15px;
+  padding: var(--mb-0-5);
+  background-color: var(--first-color-lighter);
+}
+
+.accordions__icon,
+.accordions__arrow {
+  font-size: 2rem;
+  color: var(--first-color);
+}
+
+.accordions__icon {
+  margin-right: var(--mb-0-75);
+}
+
+.accordions__title {
+  font-size: var(--h3-font-size);
+}
+
+.accordions__subtitle {
+  font-size: var(--small-font-size);
+}
+
+.accordions__arrow {
+  margin-left: auto;
+  transition: 0.4s;
+}
+
+.accordions__list {
+  row-gap: 1.5rem;
+}
+
+.accordions__titles {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: var(--mb-0-5);
+}
+
+.accordions__name {
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+}
+
+.accordions__close .accordions__list {
+  height: 0;
+  overflow: hidden;
+}
+
+.accordions__open .accordions__list {
+  height: max-content;
+  margin-bottom: var(--mb-2-5);
+}
+
+.accordions__open .accordions__arrow {
+  transform: rotate(-180deg);
+}
+
 /*==================== CARDS ====================*/
 .wrapper {
   width: 100%;
@@ -247,71 +314,6 @@ input:checked + label .card-description {
   background-image: url("../img/get-patterns.png");
 }
 
-/*==================== SKILLS ====================*/
-.skills__container {
-  row-gap: 0rem;
-}
-
-.skills__header {
-  display: flex;
-  align-items: center;
-  margin-bottom: var(--mb-2-5);
-  cursor: pointer;
-}
-
-.skills__icon,
-.skills__arrow {
-  font-size: 2rem;
-  color: var(--first-color);
-}
-
-.skills__icon {
-  margin-right: var(--mb-0-75);
-}
-
-.skills__title {
-  font-size: var(--h3-font-size);
-}
-
-.skills__subtitle {
-  font-size: var(--small-font-size);
-  color: var(--text-color-light);
-}
-
-.skills__arrow {
-  margin-left: auto;
-  transition: 0.4s;
-}
-
-.skills__list {
-  row-gap: 1.5rem;
-}
-
-.skills__titles {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: var(--mb-0-5);
-}
-
-.skills__name {
-  font-size: var(--normal-font-size);
-  font-weight: var(--font-medium);
-}
-
-.skills__close .skills__list {
-  height: 0;
-  overflow: hidden;
-}
-
-.skills__open .skills__list {
-  height: max-content;
-  margin-bottom: var(--mb-2-5);
-}
-
-.skills__open .skills__arrow {
-  transform: rotate(-180deg);
-}
-
 /*==================== SCROLL BAR ====================*/
 ::-webkit-scrollbar {
   width: 0.6rem;
@@ -336,7 +338,7 @@ input:checked + label .card-description {
     margin-right: var(--mb-1);
   }
 
-  .skills__title {
+  .accordions__title {
     font-size: var(--normal-font-size);
   }
 }
@@ -344,7 +346,7 @@ input:checked + label .card-description {
 /* For medium devices */
 @media screen and (min-width: 568px) {
   .about__container,
-  .skills_container,
+  .accordions_container,
   .portfolio__content,
   .project__container,
   .contact__container,
