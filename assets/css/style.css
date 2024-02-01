@@ -115,6 +115,7 @@ img {
   align-items: center;
   padding: 2rem 0 4rem;
 }
+
 .section__title {
   font-size: var(--h1-font-size);
 }
@@ -219,15 +220,25 @@ img {
 
 /* Quando ele for mobile vem pra cá */
 @media (max-width: 992px) {
-  /*==================== paperS ====================*/
+  /*==================== PAPERS ====================*/
   .wrapper {
     display: none;
+  }
+
+  .carousel-all {
+    display: flex;
+  }
+
+  .carousel-bg span {
+    background-color: var(--first-color-second);
+    border-radius: 25%;
+    padding: var(--mb-1);
   }
 }
 
 /* Quando ele for maior que o mobile */
 @media (min-width: 992px) {
-  .carousel {
+  .carousel-all {
     display: none;
   }
 
@@ -258,9 +269,13 @@ img {
     box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
   }
 
+  .paper a {
+    text-decoration: none;
+  }
+
   .paper-row {
-    background-color: var(--containment -color);
     display: flex;
+    background-color: var(--containment-color);
     flex-wrap: nowrap;
   }
 
@@ -291,6 +306,7 @@ img {
   .paper-description p {
     color: var(--title-color);
     padding-top: 5px;
+    text-decoration: none;
   }
 
   .paper-description h4 {
