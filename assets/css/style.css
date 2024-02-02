@@ -1,6 +1,7 @@
 /*==================== GOOGLE FONTS ====================*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 @import url("../fonts/gsk.ttf");
+
 /*==================== VARIABLES CSS ====================*/
 :root {
   --header-height: 3rem;
@@ -177,6 +178,107 @@ img {
   background-color: var(--body-color);
 }
 
+/*==================== COLORS ====================*/
+/*================= PRIMARY =================*/
+.color__primary {
+  color: var(--primary-color);
+}
+
+.color__primary-alt {
+  color: var(--primary-color-alt);
+}
+
+.color__primary-lighter {
+  color: var(--primary-color-lighter);
+}
+
+.bg-color__primary {
+  background-color: var(--primary-color);
+}
+
+.bg-color__primary-alt {
+  background-color: var(--primary-color-alt);
+}
+
+.bg-color__primary-lighter {
+  background-color: var(--primary-color-lighter);
+}
+
+/*================= SECONDARY =================*/
+.color__secondary {
+  color: var(--secondary-color);
+}
+
+.color__secondary-alt {
+  color: var(--secondary-color-alt);
+}
+
+.color__secondary-lighter {
+  color: var(--secondary-color-lighter);
+}
+
+.bg-color__secondary {
+  background-color: var(--secondary-color);
+}
+
+.bg-color__secondary-alt {
+  background-color: var(--secondary-color-alt);
+}
+
+.bg-color__secondary-lighter {
+  background-color: var(--secondary-color-lighter);
+}
+
+/*================= TERTIARY =================*/
+.color__tertiary {
+  color: var(--tertiary-color);
+}
+
+.color__tertiary-alt {
+  color: var(--tertiary-color-alt);
+}
+
+.color__tertiary-lighter {
+  color: var(--tertiary-color-lighter);
+}
+
+.bg-color__tertiary {
+  background-color: var(--tertiary-color);
+}
+
+.bg-color__tertiary-alt {
+  background-color: var(--tertiary-color-alt);
+}
+
+.bg-color__tertiary-lighter {
+  background-color: var(--tertiary-color-lighter);
+}
+
+/*================= QUARTENARY =================*/
+.color__quarternary {
+  color: var(--quarternary-color);
+}
+
+.color__quarternary-alt {
+  color: var(--quarternary-color-alt);
+}
+
+.color__quarternary-lighter {
+  color: var(--quarternary-color-lighter);
+}
+
+.bg-color__quarternary {
+  background-color: var(--quarternary-color);
+}
+
+.bg-color__quarternary-alt {
+  background-color: var(--quarternary-color-alt);
+}
+
+.bg-color__quarternary-lighter {
+  background-color: var(--quarternary-color-lighter);
+}
+
 /*==================== ACCORDIONS ====================*/
 .accordions__containment {
   row-gap: 0rem;
@@ -189,13 +291,11 @@ img {
   align-items: center;
   padding: var(--mb-0-5);
   margin-bottom: var(--mb-1-5);
-  background-color: var(--first-color-lighter);
 }
 
 .accordions__icon,
 .accordions__arrow {
   font-size: 2rem;
-  color: var(--first-color);
 }
 
 .accordions__icon {
@@ -227,7 +327,7 @@ img {
 
 .accordions__name {
   font-size: var(--normal-font-size);
-  font-weight: var(--font-medium);
+  font-weight: var(--font-semi-bold);
 }
 
 .accordions__close .accordions__list {
@@ -261,6 +361,13 @@ img {
 }
 
 /*==================== MODILE ====================*/
+@media (min-width: 579px) and (max-width: 769px) {
+  .carousel-inner {
+    position: relative;
+    max-width: 600px;
+  }
+}
+
 @media (min-width: 769px) and (max-width: 992px) {
   .carousel-inner {
     position: relative;
@@ -281,7 +388,6 @@ img {
   .carousel-bg span {
     border-radius: 25%;
     padding: var(--mb-1);
-    background-color: var(--first-color-second);
   }
 }
 
@@ -342,7 +448,6 @@ img {
     transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     -webkit-transition: all 0.5s ease;
-    background-color: var(--primary-color-lighter);
   }
 
   .paper-row:hover .paper_bg {
@@ -363,7 +468,6 @@ img {
     justify-content: center;
     font-size: var(--h3-font-size);
     border: 1px solid var(--black-color);
-    background: var(--primary-color-alt);
   }
 
   .paper-description {
