@@ -169,26 +169,26 @@ img {
 }
 
 .header {
+  left: 0;
+  bottom: 0;
   width: 100%;
   position: fixed;
-  bottom: 0;
-  left: 0;
   z-index: var(--z-fixed);
   background-color: var(--body-color);
 }
 
-/*==================== accordions ====================*/
+/*==================== ACCORDIONS ====================*/
 .accordions__containment {
   row-gap: 0rem;
 }
 
 .accordions__header {
   display: flex;
-  align-items: center;
-  margin-bottom: var(--mb-1-5);
   cursor: pointer;
   border-radius: 15px;
+  align-items: center;
   padding: var(--mb-0-5);
+  margin-bottom: var(--mb-1-5);
   background-color: var(--first-color-lighter);
 }
 
@@ -244,7 +244,30 @@ img {
   transform: rotate(-180deg);
 }
 
+/*==================== SCROLL BAR ====================*/
+::-webkit-scrollbar {
+  width: 0.6rem;
+  background-color: var(--scroll-bar-color);
+  border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--scroll-thumb-color);
+  border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--text-color-light);
+}
+
 /*==================== MODILE ====================*/
+@media (min-width: 769px) and (max-width: 992px) {
+  .carousel-inner {
+    position: relative;
+    max-width: 600px;
+  }
+}
+
 @media (max-width: 992px) {
   /*==================== PAPERS ====================*/
   .wrapper {
@@ -304,8 +327,8 @@ img {
     overflow: hidden;
     flex-wrap: nowrap;
     position: relative;
-    border-top: 2px dotted #303030;
-    background-color: white;
+    background-color: var(--white-color);
+    border-top: 2px dotted var(--black-color);
   }
 
   .paper_bg {
@@ -317,9 +340,9 @@ img {
     border-radius: 50%;
     position: absolute;
     transition: all 0.5s ease;
-    background-color: #f9b234;
     -o-transition: all 0.5s ease;
     -webkit-transition: all 0.5s ease;
+    background-color: var(--primary-color-lighter);
   }
 
   .paper-row:hover .paper_bg {
@@ -338,9 +361,9 @@ img {
     border-radius: 50%;
     align-items: center;
     justify-content: center;
-    border: 1px solid #252525;
     font-size: var(--h3-font-size);
-    background: var(--first-color-alt);
+    border: 1px solid var(--black-color);
+    background: var(--primary-color-alt);
   }
 
   .paper-description {
@@ -359,19 +382,19 @@ img {
 
   .paper-description h4 {
     margin-bottom: 0;
-    color: #252525;
     font-weight: 600;
+    color: var(--black-color);
     text-transform: capitalize;
     text-decoration: underline;
     font-family: "Gill Sans MT";
   }
 
   .paper-description p {
-    color: #252525;
     margin-bottom: 0;
     padding-top: 5px;
     font-weight: 400;
     text-decoration: none;
+    color: var(--black-color);
     font-family: "Gill Sans MT";
   }
 
@@ -379,7 +402,7 @@ img {
     display: none;
   }
 
-  /*===================== paper OPEN ====================*/
+  /*===================== PAPER OPEN ====================*/
 
   input:checked + label {
     width: 600px;
@@ -404,97 +427,5 @@ img {
 
   .paper[for="c4"] {
     background-image: url("../img/get-patterns.png");
-  }
-}
-
-/*==================== SCROLL BAR ====================*/
-::-webkit-scrollbar {
-  width: 0.6rem;
-  background-color: var(--scroll-bar-color);
-  border-radius: 0.5rem;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: var(--scroll-thumb-color);
-  border-radius: 0.5rem;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background-color: var(--text-color-light);
-}
-
-/*==================== MEDIA QUERIES ====================*/
-/* For small devices */
-@media screen and (max-width: 350px) {
-  .containment {
-    margin-left: var(--mb-1);
-    margin-right: var(--mb-1);
-  }
-
-  .accordions__title {
-    font-size: var(--normal-font-size);
-  }
-}
-
-/* For medium devices */
-@media screen and (min-width: 568px) {
-  .about__containment,
-  .accordions_containment,
-  .portfolio__content,
-  .project__containment,
-  .contact__containment,
-  .footer__containment {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .containment {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  body {
-    margin: 0;
-  }
-
-  .section {
-    padding: 6rem 0 2rem;
-  }
-  .section__subtitle {
-    margin-bottom: 4rem;
-  }
-
-  .header {
-    top: 0;
-    bottom: initial;
-  }
-
-  .header,
-  .main,
-  .footer__containment {
-    padding: 0 1rem;
-  }
-}
-
-/* For large devices */
-@media screen and (min-width: 1024px) {
-  .header,
-  .main,
-  .footer__containment {
-    padding: 0;
-  }
-}
-
-/* KEYFRAMES ANIMATION */
-@keyframes homeBgText {
-  0%,
-  10%,
-  100% {
-    background-position: -33rem 0;
-  }
-  65%,
-  85% {
-    background-position: 0 0;
   }
 }
