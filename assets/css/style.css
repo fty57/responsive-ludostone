@@ -1,11 +1,36 @@
 /*==================== GOOGLE FONTS ====================*/
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@import url("../fonts/gsk.ttf");
 /*==================== VARIABLES CSS ====================*/
 :root {
   --header-height: 3rem;
 
   /*========== Colors ==========*/
+  --yellow-color: 20; /* Primary  color */
+  --green-color: 150; /* Secondary  color */
+  --purple-color: 240; /* Tertiary   color */
+  --pink-color: 320; /* Quaternary  color */
+  --black-color: #252525;
+  --white-color: #f2f2f2;
+
+  /* HSL color mode */
+  --primary-color: hsl(var(--yellow-color), 69%, 61%);
+  --primary-color-alt: hsl(var(--yellow-color), 57%, 53%);
+  --primary-color-lighter: hsl(var(--yellow-color), 92%, 85%);
+
+  --secondary-color: hsl(var(--green-color), 69%, 61%);
+  --secondary-color-alt: hsl(var(--green-color), 57%, 53%);
+  --secondary-color-lighter: hsl(var(--green-color), 92%, 85%);
+
+  --tertiary-color: hsl(var(--purple-color), 69%, 61%);
+  --tertiary-color-alt: hsl(var(--purple-color), 57%, 53%);
+  --tertiary-color-lighter: hsl(var(--purple-color), 92%, 85%);
+
+  --quaternary-color: hsl(var(--pink-color), 69%, 61%);
+  --quaternary-color-alt: hsl(var(--pink-color), 57%, 53%);
+  --quaternary-color-lighter: hsl(var(--pink-color), 92%, 85%);
+
+  /*========== Default Colors ==========*/
   --hue-color: 150;
 
   /* HSL color mode */
@@ -13,6 +38,7 @@
   --first-color-second: hsl(var(--hue-color), 69%, 61%);
   --first-color-alt: hsl(var(--hue-color), 57%, 53%);
   --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
+
   --title-color: hsl(var(--hue-color), 8%, 15%);
   --text-color: hsl(var(--hue-color), 8%, 45%);
   --text-color-light: hsl(var(--hue-color), 8%, 65%);
@@ -23,7 +49,7 @@
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
 
   /*========== Font and typography ==========*/
-  --body-font: "IBM Plex Sans", sans-serif;
+  --body-font: "Roboto", sans-serif;
 
   /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ....*/
   --big-font-size: 2rem;
@@ -218,7 +244,7 @@ img {
   transform: rotate(-180deg);
 }
 
-/* Quando ele for mobile vem pra cá */
+/*==================== MODILE ====================*/
 @media (max-width: 992px) {
   /*==================== PAPERS ====================*/
   .wrapper {
@@ -230,22 +256,22 @@ img {
   }
 
   .carousel-bg span {
-    background-color: var(--first-color-second);
     border-radius: 25%;
     padding: var(--mb-1);
+    background-color: var(--first-color-second);
   }
 }
 
-/* Quando ele for maior que o mobile */
+/*==================== DESKTOP ====================*/
 @media (min-width: 992px) {
   .carousel-all {
     display: none;
   }
 
-  /*==================== paperS ====================*/
+  /*==================== PAPERS ====================*/
   .wrapper {
-    display: flex;
     width: 100%;
+    display: flex;
   }
 
   .paper-containment {
@@ -254,17 +280,17 @@ img {
     display: flex;
   }
 
-  /*===================== paper CLOSE ====================*/
+  /*===================== PAPER CLOSE ====================*/
   .paper {
     width: 80px;
-    border-radius: 0.75rem;
-    background-size: cover;
+    display: flex;
+    margin: 0 10px;
     cursor: pointer;
     overflow: hidden;
     border-radius: 2rem;
-    margin: 0 10px;
-    display: flex;
     align-items: flex-end;
+    background-size: cover;
+    border-radius: 0.75rem;
     transition: 0.6s cubic-bezier(0.28, -0.03, 0, 0.99);
     box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
   }
@@ -275,43 +301,78 @@ img {
 
   .paper-row {
     display: flex;
-    background-color: var(--containment-color);
+    overflow: hidden;
     flex-wrap: nowrap;
+    position: relative;
+    border-top: 2px dotted #303030;
+    background-color: white;
+  }
+
+  .paper_bg {
+    z-index: 1;
+    top: -75px;
+    right: -75px;
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    position: absolute;
+    transition: all 0.5s ease;
+    background-color: #f9b234;
+    -o-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+  }
+
+  .paper-row:hover .paper_bg {
+    transform: scale(10);
+    -ms-transform: scale(10);
+    -webkit-transform: scale(10);
   }
 
   .paper-icon {
-    background: var(--first-color-alt);
-    color: white;
-    border-radius: 50%;
+    z-index: 2;
     width: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin: 15px;
+    display: flex;
+    color: white;
+    font-weight: 600;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #252525;
+    font-size: var(--h3-font-size);
+    background: var(--first-color-alt);
   }
 
   .paper-description {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    overflow: hidden;
+    opacity: 0;
+    z-index: 2;
     height: 80px;
     width: 520px;
-    opacity: 0;
-    transform: translateY(30px);
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
     transition-delay: 0.3s;
+    justify-content: center;
     transition: all 0.3s ease;
-  }
-
-  .paper-description p {
-    color: var(--title-color);
-    padding-top: 5px;
-    text-decoration: none;
+    transform: translateY(30px);
   }
 
   .paper-description h4 {
-    color: var(--title-color);
-    text-transform: uppercase;
+    margin-bottom: 0;
+    color: #252525;
+    font-weight: 600;
+    text-transform: capitalize;
+    text-decoration: underline;
+    font-family: "Gill Sans MT";
+  }
+
+  .paper-description p {
+    color: #252525;
+    margin-bottom: 0;
+    padding-top: 5px;
+    font-weight: 400;
+    text-decoration: none;
+    font-family: "Gill Sans MT";
   }
 
   input {
