@@ -532,4 +532,20 @@ img {
   .paper[for="c4"] {
     background-image: url("../img/get-patterns.png");
   }
+
+  .paper[for="c5"] {
+    background-image: url("../img/default.png");
+  }
+
+  .paper[for="c6"] {
+    background-image: url("../img/default.png");
+  }
+
+  .paper[for="c7"] {
+    background-image: url("../img/default.png");
+  }
+
+  .paper[for="c8"] {
+    background-image: url("../img/default.png");
+  }
 }
