@@ -24,7 +24,7 @@
 
 - Rope
 - http://smartfunbrasil.com/
-- Um jogo para treinar habilidade motora, utilizando um sistema de corda e movimentos simples
+- Uma plataforma com jogos (des)plugados
 
 - Computação Deslugada
 - https://desplugada.ime.unicamp.br/
@@ -36,15 +36,15 @@
 
 - Jogos de sequência lógica
 - https://wordwall.net/pt/teacher/9991376/smartkidseducativo
-- Um jogo para ensinar conceitos básicos de programação, como condicionais e loops
+- Um jogo para ensinar conceitos básicos de programação, como condicionais e loops.
 
 - LightBot
 - https://lightbot.com/
-- Um jogo para aprender a escrever códigos em Ruby usando um robô virtual
+- Um jogo para aprender a escrever códigos em Ruby usando um robô virtual.
 
 - Scratch Jr.
 - https://www.scratchjr.org/
-- Um jogo para ensinar programação para crianças pequenas
+- Um jogo para ensinar programação para crianças pequenas.
 
 # EI03CO05
 
@@ -52,15 +52,15 @@
 
 - Labirinto Polar
 - https://www.escolagames.com.br/jogos/labirinto-polar
-- Um jogo para explorar diferentes caminhos para chegar ao final de um labirinto polar
+- Um jogo para explorar diferentes caminhos para chegar ao final de um labirinto polar.
 
 - Labirinto Joaninha
 - https://www.jogosgratisparacriancas.com/labirintos/jogos_labirintos_joaninha.php
-- Um jogo para encontrar o caminho mais curto até o final do labirinto
+- Um jogo para encontrar o caminho mais curto até o final do labirinto.
 
 - Labirinto Pato
 - https://www.jogosgratisparacriancas.com/labirintos/10-labirinto-pato.php
-- Um jogo para guiar um pato por um labirinto e descobrir novas áreas
+- Um jogo para guiar um pato por um labirinto e descobrir novas áreas.
 
 # EI03CO06
 
@@ -68,15 +68,15 @@
 
 - Wordwall
 - https://wordwall.net/pt
-- Um site para criar e jogar com puzzles baseados em palavras que precisam ser arrastadas para fora de uma caixa
+- Um site para criar e jogar com puzzles baseados em palavras que precisam ser arrastadas para fora de uma caixa.
 
 - Kahoot!
 - https://kahoot.com
-- Um site para jogar quizzes online com amigos e familiares
+- Um site para jogar quizzes online com amigos e familiares.
 
 - Sort the Court
 - https://graebor.itch.io/sort-the-court
-- Um jogo para tomar decisões sobre verdadeiro ou falso
+- Um jogo para tomar decisões sobre verdadeiro ou falso.
 
 # EI03CO07
 
@@ -88,11 +88,11 @@
 
 - Online Radio Box
 - https://onlineradiobox.com/br/genre/games_music
-- Um site para escutar rádios on-line
+- Um site para escutar rádios on-line.
 
 - Calculator: The Game
 - https://www.miniplay.com/game/calculator-the-game
-- Um jogo para calcular valores matemáticos
+- Um jogo para calcular valores matemáticos.
 
 # EI03CO08
 
@@ -100,15 +100,15 @@
 
 - Paint
 - https://paintonline.com.br/paint.html
-- Um site para criar desenhos usando as cores
+- Um site para criar desenhos usando as cores.
 
 - Photoshop Online
 - https://www.photoshoponline.net.br
-- Uma ferramenta para editar imagens digitais
+- Uma ferramenta para editar imagens digitais.
 
 - Gartic Phone
 - https://garticphone.com/pt
-- Um site para brincar de telefone sem fio por desenhos
+- Um site para brincar de telefone sem fio por desenhos.
 
 # EI03CO09
 
@@ -116,15 +116,15 @@
 
 - Tetrivoice
 - https://elocnat.itch.io/tetrivoice
-- Um jogo do tetris que utiliza a voz como forma de jogabilidade
+- Um jogo do tetris que utiliza a voz como forma de jogabilidade.
 
 - Scream to jump!
 - https://danielepuglisi.itch.io/jump-and-scream
-- Um jogo onde precisa gritar alto para saltar com o personagem
+- Um jogo onde precisa gritar alto para saltar com o personagem.
 
 - Google Lens
 - https://play.google.com/store/apps/details?id=com.google.ar.lens&hl=pt_BR&gl=US
-- Uma aplicação que permite realizar várias atividades, como escanear códigos QR ou fazer selfies
+- Uma aplicação que permite realizar várias atividades, como escanear códigos QR ou fazer selfies.
 
 # EI03CO10
 
@@ -132,15 +132,15 @@
 
 - Genial.ly
 - https://genial.ly/pt-br/
-- Uma plataforma que permite compartilhar ideias em um ambiente seguro e colaborativo
+- Uma plataforma que permite compartilhar ideias em um ambiente seguro e colaborativo.
 
 - BookCreator
 - https://bookcreator.com/
-- Uma ferramenta online para criar livros eletrônicos de qualquer tipo: textos, imagens, áudios e vídeos
+- Uma ferramenta online para criar livros eletrônicos de qualquer tipo: textos, imagens, áudios e vídeos.
 
 - FlipGrid
 - https://info.flip.com/en-us.html
-- Uma rede social baseada na criação de quadrinhos virtuais, permitindo a troca de mensagens e arquivos entre os usuários
+- Uma rede social baseada na criação de quadrinhos virtuais, permitindo a troca de mensagens e arquivos entre os usuários.
 
 # EI03CO11
 
@@ -148,15 +148,15 @@
 
 - Forest: Mantenha o foco.
 - https://play.google.com/store/apps/details?id=cc.forestapp
-- Uma aplicação que ajuda a controlar o uso da internet e dos apps, além de oferecer exercícios físicos e mentais
+- Uma aplicação que ajuda a controlar o uso da internet e dos apps, além de oferecer exercícios físicos e mentais.
 
 - Pomodoro.io
 - https://pomofocus.io/
-- Uma técnica de produtividade baseada no método pomodoro, que divide o tempo em intervalos curtos (25 minutos) seguidos por um intervalo
+- Uma técnica de produtividade baseada no método pomodoro, que divide o tempo em intervalos curtos (25 minutos) seguidos por um intervalo.
 
 - Pomodor.app
 - https://pomodor.app/timer?utm_source=zapier.com&utm_medium=referral&utm_campaign=zapier
-- Semelhante ao anterior
+- Semelhante ao anterior.
 
 # Arte e Design
 
@@ -164,15 +164,15 @@
 
 - Bezier Game
 - https://bezier.method.ac/
-- Um jogo para aprender a desenhar curvas de Bézier
+- Um jogo para aprender a desenhar curvas de Bézier.
 
 - Color Game
 - https://color.method.ac/
-- Um jogo para treinar a escolha de cores
+- Um jogo para treinar a escolha de cores.
 
 - The Boolean Game
 - https://boolean.method.ac/
-- Um jogo para ensinar lógica boolean
+- Um jogo para ensinar lógica boolean.
 
 # Programação
 
@@ -180,12 +180,12 @@
 
 - Aprendendo Godot
 - https://gdquest.itch.io/learn-godot-gdscript
-- Um jogo para aprender programação em GDScript, o scripting da engine Godot
+- Um jogo para aprender programação em GDScript, o scripting da engine Godot.
 
 - Scratch
 - https://scratch.mit.edu/
-- Um site para criar jogos interativos usando blocos
+- Um site para criar jogos interativos usando blocos.
 
 - Coding Fantasy
 - https://codingfantasy.com/
-- Aprenda CSS, HTML e JavaScript jogando jogos de codificação
+- Aprenda CSS, HTML e JavaScript jogando jogos de codificação.

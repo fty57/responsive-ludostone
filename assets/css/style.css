@@ -1,6 +1,7 @@
 /*==================== GOOGLE FONTS ====================*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 @import url("../fonts/gsk.ttf");
+@import url("https://fonts.googleapis.com/css?family=Exo:400,700");
 
 /*==================== VARIABLES CSS ====================*/
 :root {
@@ -27,9 +28,9 @@
   --tertiary-color-alt: hsl(var(--purple-color), 57%, 53%);
   --tertiary-color-lighter: hsl(var(--purple-color), 92%, 85%);
 
-  --quaternary-color: hsl(var(--pink-color), 69%, 61%);
-  --quaternary-color-alt: hsl(var(--pink-color), 57%, 53%);
-  --quaternary-color-lighter: hsl(var(--pink-color), 92%, 85%);
+  --quarternary-color: hsl(var(--pink-color), 69%, 61%);
+  --quarternary-color-alt: hsl(var(--pink-color), 57%, 53%);
+  --quarternary-color-lighter: hsl(var(--pink-color), 92%, 85%);
 
   /*========== Default Colors ==========*/
   --hue-color: 150;
@@ -44,13 +45,14 @@
   --text-color: hsl(var(--hue-color), 8%, 45%);
   --text-color-light: hsl(var(--hue-color), 8%, 65%);
   --input-color: hsl(var(--hue-color), 70%, 96%);
-  --body-color: hsl(var(--hue-color), 60%, 99%);
+
+  --body-color: #d2d2d2;
   --containment-color: #fff;
   --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
 
   /*========== Font and typography ==========*/
-  --body-font: "Roboto", sans-serif;
+  --body-font: "Exo", sans-serif;
 
   /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ....*/
   --big-font-size: 2rem;
@@ -112,6 +114,21 @@ body {
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
   color: var(--text-color);
+  background: linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+    linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+    linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+    linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+    linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+    linear-gradient(
+      #1d1d1d 25%,
+      #1a1a1a 25%,
+      #1a1a1a 50%,
+      transparent 50%,
+      transparent 75%,
+      #242424 75%,
+      #242424
+    );
+  background-size: 20px 20px;
 }
 
 h1,
@@ -149,13 +166,15 @@ img {
 
 .section__subtitle {
   display: block;
-  font-size: var(--small-font-size);
+  font-size: var(--normal-font-size);
+  margin: 0px var(--mb-3);
   margin-bottom: var(--mb-3);
 }
 
 .section__title,
 .section__subtitle {
   text-align: center;
+  font-family: var(--body-font);
 }
 
 /*==================== LAYOUT ====================*/
@@ -304,10 +323,12 @@ img {
 
 .accordions__title {
   font-size: var(--h3-font-size);
+  font-family: var(--body-font);
 }
 
 .accordions__subtitle {
   font-size: var(--small-font-size);
+  font-family: var(--body-font);
 }
 
 .accordions__arrow {
@@ -421,7 +442,7 @@ img {
     background-size: cover;
     border-radius: 0.75rem;
     transition: 0.6s cubic-bezier(0.28, -0.03, 0, 0.99);
-    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 10px 30px -5px rgba(100, 100, 100, 0.8);
   }
 
   .paper a {
@@ -517,35 +538,159 @@ img {
     transform: translateY(0) !important;
   }
 
-  .paper[for="c1"] {
-    background-image: url("../img/pattern-shapes.jpeg");
+  .paper[for="paper-c011"] {
+    background-image: url("../img/001/pattern-shapes.jpeg");
   }
 
-  .paper[for="c2"] {
-    background-image: url("../img/chicken-dance.png");
+  .paper[for="paper-c012"] {
+    background-image: url("../img/001/chicken-dance.png");
   }
 
-  .paper[for="c3"] {
-    background-image: url("../img/pattern-superhero.png");
+  .paper[for="paper-c013"] {
+    background-image: url("../img/001/pattern-superhero.png");
   }
 
-  .paper[for="c4"] {
-    background-image: url("../img/get-patterns.png");
+  .paper[for="paper-c021"] {
+    background-image: url("../img/002/img1.png");
   }
 
-  .paper[for="c5"] {
-    background-image: url("../img/default.png");
+  .paper[for="paper-c022"] {
+    background-image: url("../img/002/img2.png");
   }
 
-  .paper[for="c6"] {
-    background-image: url("../img/default.png");
+  .paper[for="paper-c023"] {
+    background-image: url("../img/002/img3.png");
   }
 
-  .paper[for="c7"] {
-    background-image: url("../img/default.png");
+  .paper[for="paper-c031"] {
+    background-image: url("../img/003/img4.png");
   }
 
-  .paper[for="c8"] {
-    background-image: url("../img/default.png");
+  .paper[for="paper-c032"] {
+    background-image: url("../img/003/img5.png");
+  }
+
+  .paper[for="paper-c033"] {
+    background-image: url("../img/003/img6.png");
+  }
+
+  .paper[for="paper-c041"] {
+    background-image: url("../img/004/img7.png");
+  }
+
+  .paper[for="paper-c042"] {
+    background-image: url("../img/004/img8.png");
+  }
+
+  .paper[for="paper-c043"] {
+    background-image: url("../img/004/img9.png");
+  }
+
+  .paper[for="paper-c051"] {
+    background-image: url("../img/005/img10.png");
+  }
+
+  .paper[for="paper-c052"] {
+    background-image: url("../img/005/img11.png");
+  }
+
+  .paper[for="paper-c053"] {
+    background-image: url("../img/005/img12.png");
+  }
+
+  .paper[for="paper-c061"] {
+    background-image: url("../img/006/img13.png");
+  }
+
+  .paper[for="paper-c062"] {
+    background-image: url("../img/006/img14.png");
+  }
+
+  .paper[for="paper-c063"] {
+    background-image: url("../img/006/img15.png");
+  }
+
+  .paper[for="paper-c071"] {
+    background-image: url("../img/007/img16.png");
+  }
+
+  .paper[for="paper-c072"] {
+    background-image: url("../img/007/img17.png");
+  }
+
+  .paper[for="paper-c073"] {
+    background-image: url("../img/007/img18.png");
+  }
+
+  .paper[for="paper-c081"] {
+    background-image: url("../img/008/img19.png");
+  }
+
+  .paper[for="paper-c082"] {
+    background-image: url("../img/008/img20.png");
+  }
+
+  .paper[for="paper-c083"] {
+    background-image: url("../img/008/img21.png");
+  }
+
+  .paper[for="paper-c091"] {
+    background-image: url("../img/009/img22.png");
+  }
+
+  .paper[for="paper-c092"] {
+    background-image: url("../img/009/img23.png");
+  }
+
+  .paper[for="paper-c093"] {
+    background-image: url("../img/009/img24.png");
+  }
+
+  .paper[for="paper-c101"] {
+    background-image: url("../img/010/img25.png");
+  }
+
+  .paper[for="paper-c102"] {
+    background-image: url("../img/010/img26.png");
+  }
+
+  .paper[for="paper-c103"] {
+    background-image: url("../img/010/img27.png");
+  }
+
+  .paper[for="paper-c111"] {
+    background-image: url("../img/011/img28.png");
+  }
+
+  .paper[for="paper-c112"] {
+    background-image: url("../img/011/img29.png");
+  }
+
+  .paper[for="paper-c113"] {
+    background-image: url("../img/011/img30.png");
+  }
+
+  .paper[for="paper-c121"] {
+    background-image: url("../img/art-design/img31.png");
+  }
+
+  .paper[for="paper-c122"] {
+    background-image: url("../img/art-design/img32.png");
+  }
+
+  .paper[for="paper-c123"] {
+    background-image: url("../img/art-design/img33.png");
+  }
+
+  .paper[for="paper-c131"] {
+    background-image: url("../img/code/img34.png");
+  }
+
+  .paper[for="paper-c132"] {
+    background-image: url("../img/code/img35.png");
+  }
+
+  .paper[for="paper-c133"] {
+    background-image: url("../img/code/img36.png");
   }
 }
