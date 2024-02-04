@@ -10,6 +10,10 @@
 - https://pbskids.org/sesame/games/ready-set-grow/
 - Um jogo para ajudar as crianças a desenvolver habilidades matemáticas básicas
 
+- Element Craft
+- https://cosmicbrain.itch.io/element-craft
+- Um jogo clássico em que você combina alguns elementos para criar novos. Crie os elementos na ordem correta.
+
 # EI03CO03
 
 ## Experienciar a execução de algoritmos brincando com objetos (des)plugados.
@@ -22,12 +26,16 @@
 - http://smartfunbrasil.com/
 - Um jogo para treinar habilidade motora, utilizando um sistema de corda e movimentos simples
 
+- Computação Deslugada
+- https://desplugada.ime.unicamp.br/
+- Um site com mais vinte atividades sobre computação (des)plugada.
+
 # EI03CO04
 
 ## Criar e representar algoritmos para resolver problemas.
 
 - Jogos de sequência lógica
-- https://www.smartkids.com.br/jogos-educativos/c/jogos-sequencia-logica
+- https://wordwall.net/pt/teacher/9991376/smartkidseducativo
 - Um jogo para ensinar conceitos básicos de programação, como condicionais e loops
 
 - LightBot
