@@ -4,6 +4,5 @@ Repositório para um conjunto de jogos educacionais para aprendizagem de computa
 
 # Links
 
-Stunning Card Animation: https://www.youtube.com/watch?v=45mnmy2JUl0
-3d Efect: https://www.youtube.com/watch?v=i9t8gdaBsTg
-Spline: https://app.spline.design/home
+- Stunning Card Animation: https://www.youtube.com/watch?v=45mnmy2JUl0
+- Css Background: https://codepen.io/manifestinteractive/pen/DmBJXy
