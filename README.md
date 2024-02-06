@@ -8,10 +8,10 @@ Alguns ajustes podem vir, especialmente na parte de componentização. Uma vez q
 
 ### Screenshot
 
-![Minha tela - Desktop - 1](./assets/screenshots/Screenshot_1.png)
-![Minha tela - Desktop - 2](./assets/screenshots/Screenshot_2.png)
-![Minha tela - Mobile - 3](./assets/screenshots/Screenshot_3.png)
-![Minha tela - Tablet - 4](./assets/screenshots/Screenshot_4.png)
+![Minha tela - Desktop - 1](./docs/assets/screenshots/Screenshot_1.png)
+![Minha tela - Desktop - 2](./docs/assets/screenshots/Screenshot_2.png)
+![Minha tela - Mobile - 3](./docs/assets/screenshots/Screenshot_3.png)
+![Minha tela - Tablet - 4](./docs/assets/screenshots/Screenshot_4.png)
 
 # Recursos úteis:
 
